@@ -1,0 +1,35 @@
+.header-container {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  padding: 0 10px;
+  gap: 20px;
+}
+
+.button-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3em;
+  gap: 5px;
+  font-weight: 900;
+  font-family: "Orbitron", sans-serif;
+}
+
+.logo {
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
