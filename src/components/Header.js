@@ -19,7 +19,7 @@ const Header = () => {
           <div className="logo">
             <UilPlay />
           </div>
-          YT-Clone
+          <span>YT-Clone</span>
         </button>
       </div>
       <Search />

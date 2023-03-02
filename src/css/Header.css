@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
+  gap: 20px;
 }
 
 .button-container {
@@ -33,4 +34,15 @@
   align-items: center;
   padding: 5px 15px;
   border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .button-container {
+    width: auto;
+  }
+
+  .button-container button.menu,
+  span {
+    display: none;
+  }
 }

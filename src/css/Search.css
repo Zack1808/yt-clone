@@ -29,3 +29,9 @@
   background-color: hsl(0, 0%, 89%);
   border: none;
 }
+
+@media (max-width: 1000px) {
+  .search-container {
+    width: 90%;
+  }
+}
