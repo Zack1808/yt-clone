@@ -1,0 +1,31 @@
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 50%;
+  border: 1px solid hsl(0, 0%, 89%);
+  border-radius: 5px;
+}
+
+.search-container:focus-within {
+  outline: 1px solid hsl(0, 0%, 0%);
+}
+
+.search-container input {
+  width: 100%;
+  border: none;
+  padding: 0 10px;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: hsl(0, 0%, 89%);
+  border: none;
+}

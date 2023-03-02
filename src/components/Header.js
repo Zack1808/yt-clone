@@ -1,6 +1,9 @@
 import React from "react";
 import { UilBars, UilPlay } from "@iconscout/react-unicons";
 
+// Importing costume components
+import Search from "./Search";
+
 // Importing the style file
 import "../css/Header.css";
 
@@ -19,6 +22,7 @@ const Header = () => {
           YT-Clone
         </button>
       </div>
+      <Search />
     </div>
   );
 };
