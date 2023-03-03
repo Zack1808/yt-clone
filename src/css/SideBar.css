@@ -32,8 +32,17 @@
   justify-content: center;
 }
 
-small {
+small,
+span {
   display: none;
+}
+
+.active {
+  display: flex;
+}
+
+button.active {
+  justify-content: center;
 }
 
 @media (max-width: 1000px) {
@@ -41,7 +50,7 @@ small {
     height: auto;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     border-right: 0;
     padding: 10px 20px;
     border-top: 1px solid var(--border-light);

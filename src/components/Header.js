@@ -8,11 +8,14 @@ import Search from "./Search";
 import "../css/Header.css";
 
 // creating the Header component
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <div className="header-container">
       <div className="button-container">
-        <button className="menu">
+        <button
+          className="menu"
+          onClick={() => toggle((prevState) => !prevState)}
+        >
           <UilBars />
         </button>
         <button>

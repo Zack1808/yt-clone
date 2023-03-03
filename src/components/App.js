@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Importing the costume components
 import Header from "./Header";
@@ -9,10 +9,13 @@ import SideBar from "./SideBar";
 
 // Creating the App component
 const App = () => {
+  // Setting up state
+  const [sidebar, setSidebar] = useState(true);
+
   return (
     <div className="app-container">
-      <Header />
-      <SideBar />
+      <Header toggle={setSidebar} />
+      <SideBar active={sidebar} />
     </div>
   );
 };

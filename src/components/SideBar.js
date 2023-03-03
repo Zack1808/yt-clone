@@ -11,43 +11,43 @@ import {
 import "../css/SideBar.css";
 
 // Creating the SideBar component
-const SideBar = () => {
+const SideBar = ({ active }) => {
   return (
     <div className="sidebar-container">
-      <button>
+      <button className={!active && "active"}>
         <div className="icon">
           <UilEstate />
-          <small>Home</small>
+          <small className={!active && "active"}>Home</small>
         </div>
-        <span>Home</span>
+        <span className={active && "active"}>Home</span>
       </button>
-      <button>
+      <button className={!active && "active"}>
         <div className="icon">
           <UilMusic />
-          <small>Music</small>
+          <small className={!active && "active"}>Music</small>
         </div>
-        <span>Music</span>
+        <span className={active && "active"}>Music</span>
       </button>
-      <button>
+      <button className={!active && "active"}>
         <div className="icon">
           <UilBrain />
-          <small>Science</small>
+          <small className={!active && "active"}>Science</small>
         </div>
-        <span>Science</span>
+        <span className={active && "active"}>Science</span>
       </button>
-      <button>
+      <button className={!active && "active"}>
         <div className="icon">
           <UilArrow />
-          <small>Programming</small>
+          <small className={!active && "active"}>Programming</small>
         </div>
-        <span>Programming</span>
+        <span className={active && "active"}>Programming</span>
       </button>
-      <button>
+      <button className={!active && "active"}>
         <div className="icon">
           <UilMoonEclipse />
-          <small>Toggle DarkMode</small>
+          <small className={!active && "active"}>Toggle DarkMode</small>
         </div>
-        <span>Toggle DarkMode</span>
+        <span className={active && "active"}>Toggle DarkMode</span>
       </button>
     </div>
   );
