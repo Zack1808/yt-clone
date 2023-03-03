@@ -32,12 +32,12 @@
   justify-content: center;
 }
 
-small,
-span {
+.sidebar-container small,
+.sidebar-container span {
   display: none;
 }
 
-.active {
+.sidebar-container .active {
   display: flex;
 }
 
@@ -60,7 +60,12 @@ button.active {
     justify-content: center;
   }
 
-  small {
+  .sidebar-container span,
+  .sidebar-container span.active {
+    display: none !important;
+  }
+
+  .sidebar-container small {
     display: flex;
   }
 }
