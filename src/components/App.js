@@ -5,12 +5,14 @@ import Header from "./Header";
 
 // Importing the style file
 import "../css/App.css";
+import SideBar from "./SideBar";
 
 // Creating the App component
 const App = () => {
   return (
     <div className="app-container">
       <Header />
+      <SideBar />
     </div>
   );
 };

@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 
+:root {
+  --black: hsl(0 0% 0%);
+  --border-light: hsl(0 0% 90%);
+  --light-container: var(--border-light);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid lime; */
 }
 
 .app-container {

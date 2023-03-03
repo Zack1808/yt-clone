@@ -8,7 +8,7 @@ import "../css/Search.css";
 const Search = () => {
   return (
     <form className="search-container">
-      <input type="text" />
+      <input type="text" placeholder="Search..." />
       <button type="submit">
         <UilSearch />
       </button>

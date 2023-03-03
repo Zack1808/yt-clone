@@ -6,6 +6,9 @@
   align-items: center;
   padding-inline: 10px;
   gap: 20px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .button-container {
@@ -24,6 +27,7 @@
   padding: 0 10px;
   font-weight: 900;
   font-family: "Orbitron", sans-serif;
+  cursor: pointer;
 }
 
 .logo {
