@@ -5,7 +5,10 @@ import Header from "./Header";
 
 // Importing the style file
 import "../css/App.css";
+
+// Importing the costume components
 import SideBar from "./SideBar";
+import VideoList from "./VideoList";
 
 // Creating the App component
 const App = () => {
@@ -15,7 +18,10 @@ const App = () => {
   return (
     <div className="app-container">
       <Header toggle={setSidebar} />
-      <SideBar active={sidebar} />
+      <div className="content">
+        <SideBar active={sidebar} />
+        <VideoList />
+      </div>
     </div>
   );
 };

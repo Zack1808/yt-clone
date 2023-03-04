@@ -1,0 +1,30 @@
+.videoitem-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.videoitem-container img {
+  width: 100%;
+}
+
+.video-info {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.video-info img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
