@@ -4,16 +4,14 @@ import React from "react";
 import "../css/VideoItem.css";
 
 // Creating the VideoItem component
-const VideoItem = () => {
+const VideoItem = ({ video }) => {
   return (
     <div className="videoitem-container">
-      <img src="https://unsplash.it/800" alt="" />
+      <img src={video.snippet.thumbnails.medium.url} alt="" />
       <div className="video-info">
-        <img src="https://unsplash.it/800" alt="" />
         <div className="description">
-          <h4>Video title</h4>
-          <small>Creator name</small>
-          <small>316k views * 2 years ago</small>
+          <h4>{video.snippet.title}</h4>
+          <small>{video.snippet.channelTitle}</small>
         </div>
       </div>
     </div>

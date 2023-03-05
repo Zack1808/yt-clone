@@ -7,7 +7,7 @@ import "../css/DisplayVideo.css";
 import VideoList from "./VideoList";
 
 // Creating the DisplayVideo component
-const DisplayVideo = () => {
+const DisplayVideo = ({ videos }) => {
   return (
     <div className="displayvideo-container">
       <div className="video-information">
@@ -24,7 +24,7 @@ const DisplayVideo = () => {
           <div className="description">Video description</div>
         </div>
       </div>
-      <VideoList listed />
+      <VideoList listed videos={videos} />
     </div>
   );
 };
