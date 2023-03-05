@@ -25,7 +25,7 @@ const Header = ({ toggle, fetch }) => {
           <span>YT-Clone</span>
         </button>
       </div>
-      <Search />
+      <Search fetch={fetch} />
     </div>
   );
 };
