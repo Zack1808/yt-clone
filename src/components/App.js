@@ -56,7 +56,6 @@ const App = () => {
             selectedVideo={selectedVideo}
           />
         )}
-        {console.log(selectedVideo, Object.keys(selectedVideo))}
       </div>
     </div>
   );
