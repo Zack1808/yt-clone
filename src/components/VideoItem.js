@@ -7,9 +7,9 @@ import "../css/VideoItem.css";
 const VideoItem = () => {
   return (
     <div className="videoitem-container">
-      <img src="https://via.placeholder.com/500x300" alt="" />
+      <img src="https://unsplash.it/800" alt="" />
       <div className="video-info">
-        <img src="https://via.placeholder.com/500x300" alt="" />
+        <img src="https://unsplash.it/800" alt="" />
         <div className="description">
           <h4>Video title</h4>
           <small>Creator name</small>

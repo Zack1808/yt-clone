@@ -11,11 +11,11 @@ const DisplayVideo = () => {
   return (
     <div className="displayvideo-container">
       <div className="video-information">
-        <iframe src="https://via.placeholder.com/500x300" />
+        <iframe src="https://unsplash.it/800" />
         <div className="video-description">
           <h2>Video Title</h2>
           <div className="channel">
-            <img src="https://via.placeholder.com/500x300" alt="" />
+            <img src="https://unsplash.it/800" alt="" />
             <div className="channel-info">
               <h4>Channel name</h4>
               <small>2.52M subscribers</small>

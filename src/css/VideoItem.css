@@ -14,6 +14,7 @@
 
 .videoitem-container img {
   width: 100%;
+  aspect-ratio: 16/9;
   border-radius: 20px;
 }
 
@@ -35,4 +36,22 @@
 .description {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  .videoitem-container {
+    flex-direction: row;
+  }
+
+  .videoitem-container img {
+    width: 30%;
+  }
+
+  .video-info {
+    flex-direction: column-reverse;
+  }
+
+  .video-info img {
+    width: 50px;
+  }
 }
