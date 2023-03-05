@@ -11,7 +11,7 @@ import {
 import "../css/SideBar.css";
 
 // Creating the SideBar component
-const SideBar = ({ active }) => {
+const SideBar = ({ active, toggleDark }) => {
   return (
     <div className="sidebar-container">
       <button className={!active && "active"}>
@@ -42,7 +42,10 @@ const SideBar = ({ active }) => {
         </div>
         <span className={active && "active"}>Programming</span>
       </button>
-      <button className={!active && "active"}>
+      <button
+        className={!active && "active"}
+        onClick={() => toggleDark((prevState) => !prevState)}
+      >
         <div className="icon">
           <UilMoonEclipse />
           <small className={!active && "active"}>Toggle DarkMode</small>

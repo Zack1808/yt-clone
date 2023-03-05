@@ -16,12 +16,13 @@ const App = () => {
   // Setting up state
   const [sidebar, setSidebar] = useState(true);
   const [selectedVideo, setSelectedVideo] = useState([]);
+  const [dark, setDark] = useState(false);
 
   return (
-    <div className="app-container">
+    <div className={`app-container ${dark ? "dark" : ""}`}>
       <Header toggle={setSidebar} />
       <div className="content">
-        <SideBar active={sidebar} />
+        <SideBar active={sidebar} toggleDark={setDark} />
         {selectedVideo.length !== 0 ? <VideoList /> : <DisplayVideo />}
       </div>
     </div>

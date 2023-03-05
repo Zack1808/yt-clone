@@ -31,6 +31,8 @@ iframe {
   padding: 20px;
   background-color: var(--light-container);
   border-radius: 20px;
+  color: var(--dark);
+  transition: 0.5s ease-in-out;
 }
 
 .channel {
@@ -43,6 +45,11 @@ iframe {
   width: 100px;
   aspect-ratio: 1/1;
   border-radius: 50%;
+}
+
+.dark .video-description {
+  background-color: var(--dark-container);
+  color: var(--light);
 }
 
 @media (max-width: 1000px) {

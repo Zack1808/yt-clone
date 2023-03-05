@@ -3,8 +3,10 @@
   justify-content: flex-end;
   gap: 10px;
   width: 50%;
-  border: 1px solid var(--border-light);
-  border-radius: 5px;
+  border: 1px solid var(--light);
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
 }
 
 .search-container:focus-within {
@@ -15,6 +17,9 @@
   width: 100%;
   border: none;
   padding: 0 10px;
+  border-radius: 10px;
+  background-color: var(--light-bg);
+  transition: 0.5s ease-in-out;
 }
 
 .search-container input:focus {
@@ -29,6 +34,23 @@
   background-color: var(--light-container);
   border: none;
   cursor: pointer;
+  border-start-end-radius: 10px;
+  border-end-end-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.dark .search-container {
+  background-color: var(--dark-bg);
+}
+
+.dark .search-container input {
+  background-color: var(--dark-bg);
+  color: var(--light);
+}
+
+.dark .search-container button {
+  background-color: var(--dark-container);
+  color: var(--light);
 }
 
 @media (max-width: 1000px) {

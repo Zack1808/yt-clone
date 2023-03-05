@@ -8,7 +8,9 @@
   gap: 20px;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid var(--border-light);
+  background-color: var(--light-bg);
+  border-bottom: 1px solid var(--light);
+  transition: 0.5s ease-in-out;
 }
 
 .button-container {
@@ -28,6 +30,8 @@
   font-weight: 900;
   font-family: "Orbitron", sans-serif;
   cursor: pointer;
+  color: var(--dark);
+  transition: 0.5s ease-in-out;
 }
 
 .logo {
@@ -38,6 +42,14 @@
   align-items: center;
   padding: 5px 15px;
   border-radius: 5px;
+}
+
+.dark .header-container {
+  background-color: var(--dark-bg);
+}
+
+.dark .button-container button {
+  color: var(--light);
 }
 
 @media (max-width: 1000px) {
