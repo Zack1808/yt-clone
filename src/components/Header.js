@@ -8,7 +8,7 @@ import Search from "./Search";
 import "../css/Header.css";
 
 // creating the Header component
-const Header = ({ toggle }) => {
+const Header = ({ toggle, fetch }) => {
   return (
     <div className="header-container">
       <div className="button-container">
@@ -18,7 +18,7 @@ const Header = ({ toggle }) => {
         >
           <UilBars />
         </button>
-        <button>
+        <button onClick={fetch}>
           <div className="logo">
             <UilPlay />
           </div>

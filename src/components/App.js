@@ -27,20 +27,26 @@ const App = () => {
   }, []);
 
   // Fetching the videos
-  const getVideos = async () => {
+  const getVideos = async (q = "reactjs") => {
     const response = await fetchVideos("/search", {
       params: {
-        q: "reactjs",
+        q,
       },
     });
     setVideos(response.data.items);
   };
 
+  // fetching new videos
+  const fetchVids = (q = "reactjs") => {
+    setSelectedVideo({});
+    getVideos(q);
+  };
+
   return (
     <div className={`app-container ${dark ? "dark" : ""}`}>
-      <Header toggle={setSidebar} />
+      <Header toggle={setSidebar} fetch={fetchVids} />
       <div className="content">
-        <SideBar active={sidebar} toggleDark={setDark} />
+        <SideBar active={sidebar} toggleDark={setDark} fetch={fetchVids} />
         {Object.keys(selectedVideo).length === 0 ? (
           <VideoList videos={videos} setVideo={setSelectedVideo} />
         ) : (
