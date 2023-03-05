@@ -4,9 +4,9 @@ import React from "react";
 import "../css/VideoItem.css";
 
 // Creating the VideoItem component
-const VideoItem = ({ video }) => {
+const VideoItem = ({ video, setVideo }) => {
   return (
-    <div className="videoitem-container">
+    <div className="videoitem-container" onClick={() => setVideo(video)}>
       <img src={video.snippet.thumbnails.medium.url} alt="" />
       <div className="video-info">
         <div className="description">

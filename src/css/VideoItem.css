@@ -51,6 +51,10 @@
   background-color: var(--dark-container);
 }
 
+.videolist .videoitem-container {
+  width: 100%;
+}
+
 @media (max-width: 1000px) and (orientation: landscape) {
   .videolist .videoitem-container {
     flex-direction: row;

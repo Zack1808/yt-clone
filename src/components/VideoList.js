@@ -7,20 +7,21 @@ import "../css/VideoList.css";
 import VideoItem from "./VideoItem";
 
 // Creating the VideoList compoenent
-const VideoList = ({ listed, videos }) => {
+const VideoList = ({ listed, videos, setVideo, selectedVideo = {} }) => {
   if (videos.length === 0) return;
   if (listed)
     return (
       <div className="videolist">
-        {videos.map((video) => (
-          <VideoItem video={video} />
-        ))}
+        {videos.map((video) => {
+          if (video.id.videoId !== selectedVideo.id.videoId)
+            return <VideoItem video={video} setVideo={setVideo} />;
+        })}
       </div>
     );
   return (
     <div className="videolist-container">
       {videos.map((video) => (
-        <VideoItem video={video} />
+        <VideoItem video={video} setVideo={setVideo} />
       ))}
     </div>
   );

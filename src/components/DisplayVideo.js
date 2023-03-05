@@ -7,24 +7,29 @@ import "../css/DisplayVideo.css";
 import VideoList from "./VideoList";
 
 // Creating the DisplayVideo component
-const DisplayVideo = ({ videos }) => {
+const DisplayVideo = ({ videos, setVideo, selectedVideo }) => {
   return (
     <div className="displayvideo-container">
       <div className="video-information">
-        <iframe src="https://unsplash.it/800" />
+        <iframe
+          src={`https://www.youtube.com/embed/${selectedVideo.id.videoId}`}
+        />
         <div className="video-description">
-          <h2>Video Title</h2>
+          <h2>{selectedVideo.snippet.title}</h2>
           <div className="channel">
-            <img src="https://unsplash.it/800" alt="" />
             <div className="channel-info">
-              <h4>Channel name</h4>
-              <small>2.52M subscribers</small>
+              <h4>{selectedVideo.snippet.channelTitle}</h4>
             </div>
           </div>
-          <div className="description">Video description</div>
+          <div className="description">{selectedVideo.snippet.description}</div>
         </div>
       </div>
-      <VideoList listed videos={videos} />
+      <VideoList
+        listed
+        videos={videos}
+        setVideo={setVideo}
+        selectedVideo={selectedVideo}
+      />
     </div>
   );
 };

@@ -18,7 +18,7 @@ import fetchVideos from "../api/fetchVideos";
 const App = () => {
   // Setting up state
   const [sidebar, setSidebar] = useState(true);
-  const [selectedVideo, setSelectedVideo] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState({});
   const [dark, setDark] = useState(false);
   const [videos, setVideos] = useState([]);
 
@@ -26,6 +26,7 @@ const App = () => {
     getVideos();
   }, []);
 
+  // Fetching the videos
   const getVideos = async () => {
     const response = await fetchVideos("/search", {
       params: {
@@ -40,12 +41,16 @@ const App = () => {
       <Header toggle={setSidebar} />
       <div className="content">
         <SideBar active={sidebar} toggleDark={setDark} />
-        {selectedVideo.length === 0 ? (
-          <VideoList videos={videos} />
+        {Object.keys(selectedVideo).length === 0 ? (
+          <VideoList videos={videos} setVideo={setSelectedVideo} />
         ) : (
-          <DisplayVideo videos={videos} />
+          <DisplayVideo
+            videos={videos}
+            setVideo={setSelectedVideo}
+            selectedVideo={selectedVideo}
+          />
         )}
-        {console.log(videos)}
+        {console.log(selectedVideo, Object.keys(selectedVideo))}
       </div>
     </div>
   );
