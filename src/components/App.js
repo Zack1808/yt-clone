@@ -24,7 +24,12 @@ const App = () => {
 
   useEffect(() => {
     getVideos();
+    setDark(JSON.parse(localStorage.getItem("yt-clone-dark-mode")));
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("yt-clone-dark-mode", JSON.stringify(dark));
+  }, [dark]);
 
   // Fetching the videos
   const getVideos = async (q = "reactjs") => {
