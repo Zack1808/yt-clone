@@ -10,6 +10,7 @@ import "../css/App.css";
 import SideBar from "./SideBar";
 import VideoList from "./VideoList";
 import DisplayVideo from "./DisplayVideo";
+import Loader from "./Loader";
 
 // Importing the API
 import fetchVideos from "../api/fetchVideos";
@@ -52,7 +53,9 @@ const App = () => {
       <Header toggle={setSidebar} fetch={fetchVids} />
       <div className="content">
         <SideBar active={sidebar} toggleDark={setDark} fetch={fetchVids} />
-        {Object.keys(selectedVideo).length === 0 ? (
+        {videos.length !== 0 ? (
+          <Loader />
+        ) : Object.keys(selectedVideo).length === 0 ? (
           <VideoList videos={videos} setVideo={setSelectedVideo} />
         ) : (
           <DisplayVideo
