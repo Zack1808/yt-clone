@@ -53,7 +53,7 @@ const App = () => {
       <Header toggle={setSidebar} fetch={fetchVids} />
       <div className="content">
         <SideBar active={sidebar} toggleDark={setDark} fetch={fetchVids} />
-        {videos.length !== 0 ? (
+        {videos.length === 0 ? (
           <Loader />
         ) : Object.keys(selectedVideo).length === 0 ? (
           <VideoList videos={videos} setVideo={setSelectedVideo} />
