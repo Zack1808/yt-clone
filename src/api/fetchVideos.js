@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// Setting up the API_KEY
-const KEY = "AIzaSyAEPWaY2Dm8OubLxZ-LPsGZ8X9ALxh0lDI";
+// Importing the API_KEY
+import { KEY } from "../data/data";
 
 // Exporting the fetching function
 export default axios.create({
