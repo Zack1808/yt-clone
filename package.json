@@ -2,7 +2,6 @@
   "name": "yt-clone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zack1808.github.io/yt-clone",
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
     "@testing-library/jest-dom": "^5.16.5",
