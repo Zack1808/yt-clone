@@ -15,6 +15,7 @@ const VideoList = ({ listed, videos, setVideo, selectedVideo = {} }) => {
         {videos.map((video) => {
           if (video.id.videoId !== selectedVideo.id.videoId)
             return <VideoItem video={video} setVideo={setVideo} />;
+          return null;
         })}
       </div>
     );

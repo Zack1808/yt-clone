@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Yt-clone App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="./public/yt-clone_preview_1.png" alt="Preview of the yt-clone app: light mode" /></p>
+<p align="center"><img src="./public/yt-clone_preview_2.png" alt="Preview of the yt-clone app: dark mode" /></p>
+<p align="center"><img src="./public/yt-clone_preview_3.png" alt="Preview of the yt-clone app: video display" /></p>
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This is a React based clone of the popular video-sharing platform YouTube using the [YouTube V3 API](https://developers.google.com/youtube/v3). It allows the user to watch videos and search for content, just like the real YouTube.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Toggle dark mode: toggle the theme for better user experinece
+- Search: searches youtube database using the keyword inserted by the user
+- Watch videos: uses an iframe window to display and play the selected video
+- Responsive design to adapt to different screen sizes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live demo
 
-### `npm test`
+You can try out the yt-clone by visiting the [live demo](https://yt-clone-jpn.netlify.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run the app locally
 
-### `npm run build`
+If you want to run the app localy:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 1. Clone the repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTTPS: `git clone https://github.com/Zack1808/yt-clone.git`
+- SSH: `git clone git@github.com:Zack1808/yt-clone.git`
+- GitHub CLI: `gh repo clone Zack1808/yt-clone`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 2. Enter the project directory
 
-### `npm run eject`
+`cd yt-clone`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 3. Allow the app to install the necessary packages (Node.js has to be installed on the device)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 4. Settup the API key
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Within the project directory, create the .env file. In there create the variable REACT_APP_YT_API_KEY
 
-## Learn More
+`REACT_APP_YT_API_KEY=yourYouTubeV3APIkey`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 5. start the app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm`
 
-### Code Splitting
+After execution, the localhost server will startup and a browser window will open, previewing the yt-clone app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribution
 
-### Analyzing the Bundle Size
+Contributions to the Yt-clone project are welcome. If you find any issues or want to add new features, feel free to create a pull request. Make sure to follow the project's coding conventions and provide detailed information about your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+If you have any questions or suggestions, you can reach me via:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Mail: jeanpierrenovak23@gmail.com
+- My portfolio: [jeanpierrenovak.netlify.app](https://jeanpierrenovak.netlify.app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy video watching!
