@@ -10,7 +10,7 @@ This is a React based clone of the popular video-sharing platform YouTube using 
 
 ## Features
 
-- Toggle dark mode: toggle the theme for better user experinece
+- Toggle dark mode: toggle the theme for better user experinece, uses [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) for storing the status
 - Search: searches youtube database using the keyword inserted by the user
 - Watch videos: uses an iframe window to display and play the selected video
 - Responsive design to adapt to different screen sizes
